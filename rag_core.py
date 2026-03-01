@@ -31,9 +31,9 @@ class RAGSystem:
 
         self.conversation_memory = []
 
-    # ---------------------------
-    # Create Index (Safe Create)
-    # ---------------------------
+ 
+   
+   
     def _create_index(self):
         try:
             self.client.create_index(
@@ -46,9 +46,6 @@ class RAGSystem:
         except Exception:
             print("Index already exists.")
 
-    # ---------------------------
-    # Ingest Documents
-    # ---------------------------
     def ingest_documents(self):
         if self.documents_loaded:
             return
@@ -117,9 +114,7 @@ class RAGSystem:
     """
         rewritten = self.llm(prompt, max_new_tokens=30)
         return rewritten.strip()
-    # ---------------------------
-    # Search
-    # ---------------------------
+  
     def search(self, query, top_k=2):
         query_embedding = self.embed_model.encode([query])[0]
 
@@ -134,9 +129,7 @@ class RAGSystem:
 
         return "\n".join(contexts)
 
-    # ---------------------------
-    # Chunking
-    # ---------------------------
+   
     def _chunk_text(self, text, chunk_size=400, overlap=50):
         chunks = []
         start = 0
@@ -150,11 +143,11 @@ class RAGSystem:
     # Ask
     # ---------------------------
     def ask(self, question):
-        # Step 1: Rewrite
+      
         rewritten_query = self._rewrite_query(question)
         print("Rewritten Query:", rewritten_query)
 
-# Step 2: Retrieve using rewritten query
+
         context = self.search(rewritten_query)
 
         memory_context = "\n".join(
