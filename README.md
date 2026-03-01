@@ -145,7 +145,7 @@ This project uses:
 
 ### 1️⃣ Clone Repository
 
-git clone [[https://github.com/YOUR_USERNAME/agentic-rag-using-endee.git](https://github.com/AshCodes23/agentic-rag-using-endee.git)]
+git clone [[https://github.com/AshCodes23/agentic-rag-using-endee.git](https://github.com/AshCodes23/agentic-rag-using-endee.git)]
 cd agentic-rag-using-endee
 
 ---
