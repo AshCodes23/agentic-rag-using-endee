@@ -145,7 +145,7 @@ This project uses:
 
 ### 1️⃣ Clone Repository
 
-git clone [https://github.com/YOUR_USERNAME/agentic-rag-using-endee.git](https://github.com/YOUR_USERNAME/agentic-rag-using-endee.git)
+git clone [[https://github.com/YOUR_USERNAME/agentic-rag-using-endee.git](https://github.com/AshCodes23/agentic-rag-using-endee.git)]
 cd agentic-rag-using-endee
 
 ---
@@ -249,9 +249,4 @@ The Endee name and branding belong to Endee Labs.
 
 ---
 
-# 🎯 Placement Talking Point (Short Version)
-
-“I built a fully local agentic RAG system using Endee as the vector database backend, implemented cosine-based semantic retrieval over 384-dimensional embeddings, and added multi-agent validation to reduce hallucinations in LLM outputs.”
-
----
 
